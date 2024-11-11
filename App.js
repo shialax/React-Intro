@@ -1,22 +1,15 @@
+import React from "react";
+import Board from "./Board";
+import "./App.css";
+
+/** Simple app that just shows the LightsOut game. */
+
 function App() {
   return (
-    <div>
-      <Person
-        name="Homer"
-        age={38}
-        hobbies={["bowling", "watching tv", "drinking beer"]}
-      />
-      <Person name="Marge" age={34} hobbies={["painting", "gambling"]} />
-      <Person
-        name="Bart"
-        age={10}
-        hobbies={["skateboarding", "making prank calls"]}
-      />
-      <Person
-        name="Lisa"
-        age={8}
-        hobbies={["reading", "saxophone", "eating vegetables"]}
-      />
-    </div>
+      <div className="App">
+        <Board />
+      </div>
   );
 }
+
+export default App;
